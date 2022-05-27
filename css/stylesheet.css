@@ -1,0 +1,63 @@
+.container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerRow {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0;
+}
+
+.box {
+    display: inline;
+    border: 1px solid black;
+    background-color: white;
+    margin: 0px;
+    flex: 1 1 0;
+}
+
+@keyframes colorize {
+    from {background-color: white;}
+    to {background-color: darkslategray;}
+}
+
+.boxActive {
+    animation: colorize 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.buttonsContainer {
+    margin-top: 15px ;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(53, 50, 50);
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(53, 50, 50);
+    -webkit-text-stroke: 2px white;
+}
